@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type fast</title>
+    <link rel="stylesheet" href="file:///C:/Users/Abolaji%20Mustapha/Documents/bootstrap-5.0.1-dist/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+</head>
+    <style>
+        body{
+            background-color: rgb(4, 4, 36);
+        }
+
+        *{
+            color:white;
+        }
+
+
+        .index{
+            z-index: 1;
+        }
+        .gameov{
+            align-self: center;
+            z-index: 2;
+        }
+    </style>
+<body text-light>
+    <!--header-->
+  <header class="bg-secondary text-center p-3 mb-5">
+      <h1 class="text-light">WordBeater</h1>
+  </header>
+    <!-- end  of header-->
+  <div class="container text-center">
+
+
+    <!--word & input-->
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xl-6 mx-auto index">
+            <p class="lead">Type The Given Word Within
+                <span class="seconds text-success">
+                    5
+                </span>seconds:
+            </p>
+
+            <h2 class="display-2 mb-5 current-word">hello</h2>
+
+            <!--input bar-->
+            <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="wordInput" autofocus>
+
+            <h4 class="mt-3" id="message"></h4>
+            
+
+            <!--time & score columns-->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h3>Time Left:
+                        <span id="time">0</span>
+                    </h3>
+
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Score:
+                        <span id="score">0</span>
+                    </h3>
+
+                </div>
+            </div>
+
+                <!--instruction-->
+
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>instructions</h5>
+                            <p>
+                                Type each word in an amount of
+                                seconds to score.to play again, just type the current word.your score would reset. 
+                            </p>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+
+        </div>
+
+  </div>
+
+</body>
+<script src="type fast.js"></script>
+</html>
