@@ -1,2 +1,2 @@
-# web-dev
+# type fast
 web development
